@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- estilo de letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+    <!-- JS dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 dependency -->
+    <script src="https://unpkg.com/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- bootbox code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+    <script src="https://github.com/makeusabrew/bootbox/releases/download/v5.5.2/bootbox.locales.min.js"></script>
+-
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="module">
+
+        import {inserta_inicio} from './lib/index.js';
+        import {inserta_final} from './lib/index.js';
+        import {inserta_antes_X} from './lib/index.js';
+        import {inserta_despues_X} from './lib/index.js';
+        import {Elimina_inicio} from './lib/index.js';
+        import {Elimina_ultimo} from './lib/index.js';
+        import {Elimina_X} from './lib/index.js'; 
+        import {Elimina_antes_X} from './lib/index.js';
+        import {Eliminar_Posterior_X} from './lib/index.js';
+
+        window.inserta_inicio=inserta_inicio;
+        window.inserta_final=inserta_final;
+        window.inserta_antes_X=inserta_antes_X;
+        window.inserta_despues_X=inserta_despues_X;
+        window.Elimina_inicio=Elimina_inicio;
+        window.Elimina_ultimo=Elimina_ultimo;
+        window.Elimina_X=Elimina_X;
+        window.Elimina_antes_X=Elimina_antes_X;
+        window.Eliminar_Posterior_X=Eliminar_Posterior_X;
+
+    </script>
+    
+
+</head> 
+ 
+<body>
+    
+    <div class="contenedor">
+        <div class="widget-0">
+            <figure>
+                <img src="unjbg.png" style="width: 120px;">
+            </figure>
+        
+        </div>
+         <header class="header">
+            <h2 class="titulo">UNIVERSIDAD NACIONAL JORGE BASADRE GROHMANN</h2>
+         </header>
+        <main class="contenido">
+            <h1>LISTAS ENLAZADAS</h1>
+            <canvas id="tutorial" width="960" height="200"></canvas>
+        </main>
+       
+        <aside class="sidebar">
+            <button class="btn bt1" onclick="inserta_inicio()">Insertar al inicio</button>
+            <button class="btn bt1" onclick="inserta_final()">Insertar al final</button>
+            <button class="btn bt1" onclick="inserta_antes_X()">Insertar antes de X</button>
+            <button class="btn bt1" onclick="inserta_despues_X()">Insertar despues de X</button>
+            <button class="btn bt1" onclick="Elimina_inicio()">Eliminar inicio</button>
+            <button class="btn bt1" onclick="Elimina_ultimo()">Eliminar ultimo</button> 
+            <button class="btn bt1" onclick="Elimina_X()">Eliminar X</button> 
+            <button class="btn bt1" onclick="Elimina_antes_X()">Elimina antes X</button>
+            <button class="btn bt1" onclick="Eliminar_Posterior_X()">Elimina Posterior X</button>
+            
+        </aside>
+        
+        <div class="widget-1">
+            <h5>Integrantes :</h5>
+            <h5>-Frank Aldair Chaparro Perca 2021-119011</h5>
+            <h5>-Noemí Esmeralda Quecaño Castillo 2021-119132</h5>
+            <h5>-Lizzeth Mercedes Candia Llica 2021-119007</h5>
+        </div>
+        <div class="widget-2">
+            <img src="esis.png" style="width: 150px;">
+        </div>
+        <footer class="footer">
+            <h3>GRACIAS POR SU VISITA...</h3>
+        </footer>
+     
+        
+    </div>
+</body>
+
+</html>

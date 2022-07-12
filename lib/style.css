@@ -1,0 +1,166 @@
+canvas { /*border: 1px solid black; */
+    border: 2px solid rgb(14, 13, 14);  
+    background:transparent;
+    border-radius: 15px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/f3.jpg);
+    color: black;
+    /*font-family: 'Roboto',sans-serif;*/
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+
+    grid-template-areas: "widget-0 header header "
+                         "contenido contenido contenido"
+                         "sidebar sidebar sidebar"
+                         "widget-1 widget-1 widget-2 "
+                         "footer footer footer";
+                         }
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+.contenedor .header{
+    background-color: #12203e;
+    color: #ffff;
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.contenedor .contenido{
+    text-align: center;
+    grid-area: contenido;
+    background-image: url(/cuadrito.gif) ;/*(13, 194, 240)*/
+    color: white;
+
+}
+
+.contenedor .sidebar{
+     grid-column-start: 3/4;
+     background-color: transparent;
+     /*#faa43d text-align: center;
+     display: flex;
+     align-items:center;
+     justify-content: center;centrar texto totalmente */
+    
+     min-height: 200px;/*RESPONSIVE--ANCHO----------------- */
+     
+    grid-area: sidebar;
+    
+
+}
+.contenedor .widget-0,
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background-color:#fff;/*#55a8fd*/
+    color: black;
+    height: 100px;
+    height: 150px;
+    /*text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+
+}
+.contenedor .widget-0{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: widget-0;
+ }
+
+.contenedor .widget-1{
+   background-color: rgb(115, 179, 204);
+   grid-area: widget-1;
+}
+
+.contenedor .widget-2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: widget-2;
+ }
+
+.contenedor .footer{
+    background-color:#12203e ;
+    color: #ffff;
+    grid-area: footer;
+    
+}
+
+.btn{
+    border:3px solid rgba(100, 100, 100, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 300px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor:pointer ;
+    color: #fff;
+    background-size: 300%;
+    transition: 0.6s;
+}
+
+.btn:hover{
+    background-position: right;
+}
+.bt1{
+    background-image: linear-gradient(to left,#00B7DA,#161579,#00B7DA);
+}
+
+vide{
+   position: absolute ;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        background: #000;
+    }
+    .contenedor{
+        grid-template-areas: "widget-0 header header "
+        "contenido contenido contenido"
+        "sidebar sidebar sidebar"
+        "widget-1 widget-1 widget-2 "
+        "widget-1 widget-1 footer";
+    }
+}
+
